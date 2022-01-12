@@ -132,6 +132,9 @@ height: 117px;
 /*-------------
  Media queries
 -------------- */
+
+/* Moblie devices */
+
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
@@ -154,6 +157,8 @@ height: 117px;
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+/* Tablets Devices  */
 
 @media only screen and (min-width:689px) and (max-width:992px){
     .container{
