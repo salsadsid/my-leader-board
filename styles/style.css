@@ -3,6 +3,8 @@
 /* Common styles and utilities */
 body {
     background-color: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 main {
@@ -18,14 +20,56 @@ hr {
     margin-bottom: 2px;
 }
 
-.header-title h1 {
-    font-size: 45px;
-    color: #562EFF;
-    font-family: 'Poppins', sans-serif;
-    margin: 40px 0 0 0;
-    text-align: center;
-    letter-spacing: 0.4cm;
-    font-weight: 200;
+
+
+/* header-styles */
+
+.header {
+    background-color: #562EFF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header>div {
+    display: flex;
+    width: 870px;
+    justify-content: space-between;
+}
+
+.header-title img {
+    width: 41px;
+}
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company-name h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-left: 15px;
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 36px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
 }
 
 /* Top-players-styles */
@@ -125,6 +169,8 @@ top-blogs-styles
  ---------------*/
 .latest-course-header {
     margin-left: 30px;
+    font-size: 24px;
+    color: #562EFF;
 }
 
 .courses {
@@ -204,8 +250,46 @@ top-blogs-styles
 
 @media only screen and (max-width:688px) {
 
-    .header-title h1 {
-        letter-spacing: 0cm;
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header>div {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        /* margin-left: 36px; */
+    }
+
+    .top-players-title,
+    .top-blogs-header,
+    .latest-course-header {
+        text-align: center;
     }
 
     .container {
