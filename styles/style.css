@@ -72,6 +72,53 @@ hr {
     color: #FFFFFF;
 }
 
+/* dropdown-mega-menu */
+.mega-menu {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 40px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.dropdown ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown>div {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown>div>h2 {
+    color: #562EFF;
+    font-size: 24px;
+}
+
+.dropdown>div a {
+    color: black;
+    font-size: 14px;
+}
+
+.dropdown>div a:hover {
+    color: #562EFF
+}
+
+.menu .mega-menu:hover>.dropdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
 /* Top-players-styles */
 .container {
     width: 870px;
@@ -285,6 +332,10 @@ top-blogs-styles
         margin-bottom: 15px;
         /* margin-left: 36px; */
     }
+
+    /* .menu .mega-menu:hover>.dropdown {
+        display: none
+    } */
 
     .top-players-title,
     .top-blogs-header,
